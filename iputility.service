@@ -1,0 +1,11 @@
+[Unit]
+Description=icanhazip IP Checker
+After=network.target
+
+[Service]
+WorkingDirectory=/etc/iputility
+ExecStart=/etc/iputility/iputility
+
+[Install]
+WantedBy=multi-user.target
+
