@@ -4,7 +4,7 @@ FROM golang:1.23
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . .
+COPY *.go ./
 
 # Build the Go app
 RUN go build main.go
@@ -13,4 +13,4 @@ RUN go build main.go
 EXPOSE 8080
 
 # Command to run the executable
-CMD ["main"]
+CMD ["./main"]
